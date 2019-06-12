@@ -75,7 +75,7 @@ ml-api-adapter-service:
     externalPath: /
     # Used to create an Ingress record.
     hosts:
-      api: ml-api-adapter.local
+      api: ml-api-adapter.moja-box.vessels.tech
 
     annotations:
       nginx.ingress.kubernetes.io/rewrite-target: '/'
@@ -85,7 +85,7 @@ ml-api-adapter-service:
       # Secrets must be manually created in the namespace.
       # - secretName: chart-example-tls
       #   hosts:
-      #     - chart-example.local
+      #     - chart-example.moja-box.vessels.tech
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
     # choice for the user. This also increases chances charts run on environments with little
@@ -159,7 +159,7 @@ ml-api-adapter-handler-notification:
     externalPath: /
     # Used to create an Ingress record.
     hosts:
-      api: ml-api-adapter-notification.local
+      api: ml-api-adapter-notification.moja-box.vessels.tech
 
     annotations:
       nginx.ingress.kubernetes.io/rewrite-target: '/'
@@ -169,7 +169,7 @@ ml-api-adapter-handler-notification:
       # Secrets must be manually created in the namespace.
       # - secretName: chart-example-tls
       #   hosts:
-      #     - chart-example.local
+      #     - chart-example.moja-box.vessels.tech
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
     # choice for the user. This also increases chances charts run on environments with little
@@ -305,7 +305,7 @@ ml-api-adapter-handler-notification:
 #    enabled: false
 #    servicePort: 19092
 #    firstListenerPort: 31090
-#    domain: cluster.local
+#    domain: cluster.moja-box.vessels.tech
 #    init:
 #      image: "lwolf/kubectl_deployer"
 #      imageTag: "0.4"
@@ -329,7 +329,7 @@ ml-api-adapter-handler-notification:
 #    ##
 #    ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
 #    # "advertised.listeners": |-
-#    #   EXTERNAL://kafka.cluster.local:$((31090 + ${KAFKA_BROKER_ID}))
+#    #   EXTERNAL://kafka.cluster.moja-box.vessels.tech:$((31090 + ${KAFKA_BROKER_ID}))
 #    # "listener.security.protocol.map": |-
 #    #   PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 #

@@ -86,7 +86,7 @@ ingress:
   enabled: true
   # Used to create an Ingress record.
   hosts:
-    api: central-event-processor.local
+    api: central-event-processor.moja-box.vessels.tech
   
   externalPath: /
   
@@ -98,7 +98,7 @@ ingress:
     # Secrets must be manually created in the namespace.
     # - secretName: chart-example-tls
     #   hosts:
-    #     - chart-example.local
+    #     - chart-example.moja-box.vessels.tech
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
@@ -251,7 +251,7 @@ config:
 #     enabled: false
 #     servicePort: 19092
 #     firstListenerPort: 31090
-#     domain: cluster.local
+#     domain: cluster.moja-box.vessels.tech
 #     init:
 #       image: "lwolf/kubectl_deployer"
 #       imageTag: "0.4"
@@ -275,7 +275,7 @@ config:
 #     ##
 #     ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
 #     # "advertised.listeners": |-
-#     #   EXTERNAL://kafka.cluster.local:$((31090 + ${KAFKA_BROKER_ID}))
+#     #   EXTERNAL://kafka.cluster.moja-box.vessels.tech:$((31090 + ${KAFKA_BROKER_ID}))
 #     # "listener.security.protocol.map": |-
 #     #   PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 
@@ -529,7 +529,7 @@ mongodb:
     runAsUser: 1001
 
   ## Kubernetes Cluster Domain
-  clusterDomain: cluster.local
+  clusterDomain: cluster.moja-box.vessels.tech
 
   ## Kubernetes service type
   service:

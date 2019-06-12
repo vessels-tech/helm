@@ -83,11 +83,11 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - account-lookup-service-api.local
+    - account-lookup-service-api.moja-box.vessels.tech
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
-  #      - chart-example.local
+  #      - chart-example.moja-box.vessels.tech
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

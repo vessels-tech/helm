@@ -129,7 +129,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger.local
+        api: central-ledger.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -138,7 +138,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -266,7 +266,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger-transfer-prepare.local
+        api: central-ledger-transfer-prepare.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -275,7 +275,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -403,7 +403,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger-transfer-position.local
+        api: central-ledger-transfer-position.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -412,7 +412,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -539,7 +539,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger-transfer-get.local
+        api: central-ledger-transfer-get.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -548,7 +548,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -676,7 +676,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger-transfer-fulfil.local
+        api: central-ledger-transfer-fulfil.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -685,7 +685,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -812,7 +812,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger-timeout.local
+        api: central-ledger-timeout.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -821,7 +821,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -948,7 +948,7 @@ centralledger:
         api: /
       # Used to create an Ingress record.
       hosts:
-        api: central-ledger-admin-transfer.local
+        api: central-ledger-admin-transfer.moja-box.vessels.tech
       annotations:
         nginx.ingress.kubernetes.io/rewrite-target: '/'
         # kubernetes.io/ingress.class: nginx
@@ -957,7 +957,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -1014,7 +1014,7 @@ centralledger:
       enabled: false
       # Used to create an Ingress record.
       hosts:
-        api: forensic-logging-sidecar.local
+        api: forensic-logging-sidecar.moja-box.vessels.tech
 
       externalPath: /
 
@@ -1025,7 +1025,7 @@ centralledger:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -1088,7 +1088,7 @@ centralledger:
         enabled: true
         # Used to create an Ingress record.
         hosts:
-          - central-kms.local
+          - central-kms.moja-box.vessels.tech
         externalPath: /
 
         annotations:
@@ -1098,7 +1098,7 @@ centralledger:
           # Secrets must be manually created in the namespace.
           # - secretName: chart-example-tls
           #   hosts:
-          #     - chart-example.local
+          #     - chart-example.moja-box.vessels.tech
 
       resources: {}
         # We usually recommend not to specify default resources and to leave this as a conscious
@@ -1462,7 +1462,7 @@ centralledger:
       enabled: false
       servicePort: 19092
       firstListenerPort: 31090
-      domain: cluster.local
+      domain: cluster.moja-box.vessels.tech
       init:
         image: "lwolf/kubectl_deployer"
         imageTag: "0.4"
@@ -1488,7 +1488,7 @@ centralledger:
       ##
       ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
       # "advertised.listeners": |-
-      #   EXTERNAL://kafka.cluster.local:$((31090 + ${KAFKA_BROKER_ID}))
+      #   EXTERNAL://kafka.cluster.moja-box.vessels.tech:$((31090 + ${KAFKA_BROKER_ID}))
       # "listener.security.protocol.map": |-
       #   PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 
@@ -1725,7 +1725,7 @@ centraldirectory:
     externalPath: /
     # Used to create an Ingress record.
     hosts:
-      api: central-directory.local
+      api: central-directory.moja-box.vessels.tech
     annotations:
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
@@ -1733,7 +1733,7 @@ centraldirectory:
       # Secrets must be manually created in the namespace.
       # - secretName: chart-example-tls
       #   hosts:
-      #     - chart-example.local
+      #     - chart-example.moja-box.vessels.tech
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
     # choice for the user. This also increases chances charts run on environments with little
@@ -1802,7 +1802,7 @@ centraldirectory:
       externalPath: /
       # Used to create an Ingress record.
       hosts:
-        api: central-end-user-registry.local
+        api: central-end-user-registry.moja-box.vessels.tech
       annotations:
         # kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
@@ -1810,7 +1810,7 @@ centraldirectory:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -1903,7 +1903,7 @@ centraldirectory:
       enabled: false
       # Used to create an Ingress record.
       hosts:
-        api: mock-pathfinder.local
+        api: mock-pathfinder.moja-box.vessels.tech
       annotations:
         # kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
@@ -1911,7 +1911,7 @@ centraldirectory:
         # Secrets must be manually created in the namespace.
         # - secretName: chart-example-tls
         #   hosts:
-        #     - chart-example.local
+        #     - chart-example.moja-box.vessels.tech
     resources: {}
       # We usually recommend not to specify default resources and to leave this as a conscious
       # choice for the user. This also increases chances charts run on environments with little
@@ -2029,7 +2029,7 @@ centralsettlement:
     externalPath: /
     # Used to create an Ingress record.
     hosts:
-      api: central-settlement.local
+      api: central-settlement.moja-box.vessels.tech
     annotations:
       nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
@@ -2038,7 +2038,7 @@ centralsettlement:
       # Secrets must be manually created in the namespace.
       # - secretName: chart-example-tls
       #   hosts:
-      #     - chart-example.local
+      #     - chart-example.moja-box.vessels.tech
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
     # choice for the user. This also increases chances charts run on environments with little
@@ -2119,7 +2119,7 @@ centraleventprocessor:
     enabled: true
     # Used to create an Ingress record.
     hosts:
-      api: central-event-processor.local
+      api: central-event-processor.moja-box.vessels.tech
     
     externalPath: /
     
@@ -2131,7 +2131,7 @@ centraleventprocessor:
       # Secrets must be manually created in the namespace.
       # - secretName: chart-example-tls
       #   hosts:
-      #     - chart-example.local
+      #     - chart-example.moja-box.vessels.tech
 
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
@@ -2284,7 +2284,7 @@ centraleventprocessor:
   #     enabled: false
   #     servicePort: 19092
   #     firstListenerPort: 31090
-  #     domain: cluster.local
+  #     domain: cluster.moja-box.vessels.tech
   #     init:
   #       image: "lwolf/kubectl_deployer"
   #       imageTag: "0.4"
@@ -2308,7 +2308,7 @@ centraleventprocessor:
   #     ##
   #     ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
   #     # "advertised.listeners": |-
-  #     #   EXTERNAL://kafka.cluster.local:$((31090 + ${KAFKA_BROKER_ID}))
+  #     #   EXTERNAL://kafka.cluster.moja-box.vessels.tech:$((31090 + ${KAFKA_BROKER_ID}))
   #     # "listener.security.protocol.map": |-
   #     #   PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 
@@ -2562,7 +2562,7 @@ centraleventprocessor:
       runAsUser: 1001
 
     ## Kubernetes Cluster Domain
-    clusterDomain: cluster.local
+    clusterDomain: cluster.moja-box.vessels.tech
 
     ## Kubernetes service type
     service:
