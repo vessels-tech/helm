@@ -333,7 +333,7 @@ mysql:
   ## When set to true will create sidecar for `prom/mysqld-exporter`
   ## metrics exporting
   metricsExporter:
-    enabled: true
+    enabled: false
 
   ## When set to true will create sidecar to tail mysql log
   logTail: true
