@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/usr/bin/env bash
  
 # 
 # Script to Package all charts, and created an index.yaml in ./repo directory
@@ -109,7 +109,7 @@ echo "Creating Helm repo index..."
 helm repo index . --url http://mojaloop.io/helm/repo 
 checkCommandResult
 
-echo "\
+echo -c "\
 Packaging completed.\n \
 Ensure you check the output for any errors. \n \
 Ignore any http errors when connecting to \"local\" chart repository.\n \

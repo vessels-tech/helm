@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Script to update all Helm Chart Dependencies
@@ -93,7 +93,7 @@ echo "Linting Mojaloop..."
 helm lint ./mojaloop
 checkCommandResult
 
-echo "\
+echo -e "\
 Chart linting completed.\n \
 Ensure you check the output for any errors. \n \
 Ignore any http errors when connecting to \"local\" chart repository.\n \
