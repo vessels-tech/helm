@@ -1,7 +1,7 @@
 # requirements.yaml
 dependencies:
 - name: centralledger-service
-  version: 6.2.5
+  version: 6.3.5
   repository: "file://./chart-service"
   condition: centralledger-service.enabled
 - name: centralledger-handler-transfer-prepare
