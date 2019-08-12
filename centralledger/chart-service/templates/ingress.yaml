@@ -1,6 +1,5 @@
 {{- if .Values.ingress.enabled -}}
 {{- $serviceName := include "centralledger-service.fullname" . -}}
-{{- $servicePort := .Values.service.externalPort -}}
 {{- $servicePath := .Values.ingress.externalPath -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -24,7 +23,7 @@ spec:
           - path: {{ $servicePath }}
             backend:
               serviceName: {{ $serviceName }}
-              servicePort: {{ $servicePort }}
+              servicePort: 3001
     {{- end -}}
   {{- if .Values.ingress.tls }}
   tls:
