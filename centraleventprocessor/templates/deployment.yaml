@@ -1,7 +1,7 @@
 {{- $kafkaHost := ( .Values.config.kafka_host | replace "$release_name" .Release.Name ) -}}
 {{- $mongodbHost := ( .Values.config.mongo_host | replace "$release_name" .Release.Name ) -}}
 
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "centraleventprocessor.fullname" . }}
