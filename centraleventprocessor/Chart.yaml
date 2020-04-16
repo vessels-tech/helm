@@ -21,7 +21,8 @@ dependencies:
 #   alias: kafka
 #   condition: kafka.enabled
 - name: mongodb
-  version: 4.9.0
+  # 7.2.9 is the first version without the extensions/v1beta1 
+  version: 7.2.9
   repository: https://kubernetes-charts.storage.googleapis.com/
   alias: mongodb
   condition: mongodb.enabled
