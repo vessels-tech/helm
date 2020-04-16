@@ -1,0 +1,15 @@
+dependencies:
+- name: account-lookup-service
+  repository: file://./chart-service
+  version: 8.7.1
+- name: account-lookup-service-admin
+  repository: file://./chart-admin
+  version: 8.7.1
+- name: als-oracle-pathfinder
+  repository: file://../als-oracle-pathfinder
+  version: 8.7.1
+- name: percona-xtradb-cluster
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 1.0.1
+digest: sha256:36e9e46742d599914de12038626ef06df0c263d0df0fffdd831996a9804864d3
+generated: "2020-04-16T02:55:44.280973599Z"
