@@ -31,6 +31,10 @@ echo "Packaging Promfana..."
 helm package -u -d ./repo ./monitoring/promfana
 checkCommandResult
 
+echo "Packaging percona"
+helm package -u -d ./repo  ./percona-xtradb-cluster
+checkCommandResult
+
 echo "Packaging EFK..."
 helm package -u -d ./repo ./monitoring/efk
 checkCommandResult
