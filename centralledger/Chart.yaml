@@ -51,12 +51,13 @@ dependencies:
 #  repository: https://kubernetes-charts.storage.googleapis.com/
 #  condition: postgresql.enabled
 - name: percona-xtradb-cluster
-  version: 1.0.1
-  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 1.0.4
+  repository: "file://../percona-xtradb-cluster"
   alias: mysql
   condition: mysql.enabled
 - name: kafka
-  version: 0.13.11
+  # version: 0.13.11
+  version: 0.20.9
   repository: http://storage.googleapis.com/kubernetes-charts-incubator
   alias: kafka
   condition: kafka.enabled
