@@ -1582,6 +1582,7 @@ centralledger:
       # requests:
       #   cpu: 100m
       #   memory: 1024Mi
+      # this is what we can probably override for development clusters
     kafkaHeapOptions: "-Xmx1G -Xms1G"
 
     ## The StatefulSet Update Strategy which Kafka will use when changes are applied.

@@ -1,0 +1,9 @@
+account-lookup-service:
+  account-lookup-service:
+    # ingress:
+    #   hosts:
+    #     - account-lookup-service.local
+    #     - account-lookup-service.moja-box.vessels.tech
+    config:
+      log_level: debug
+      log_transport: console
