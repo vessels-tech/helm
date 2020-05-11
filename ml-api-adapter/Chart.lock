@@ -1,0 +1,9 @@
+dependencies:
+- name: ml-api-adapter-service
+  repository: file://./chart-service
+  version: 9.5.0
+- name: ml-api-adapter-handler-notification
+  repository: file://./chart-handler-notification
+  version: 9.5.0
+digest: sha256:befb1b0cf6ec2127bc042fa2bf70993367561702d39245a4c2a541a66672e6b5
+generated: "2020-05-11T12:59:47.33668+08:00"

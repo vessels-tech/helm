@@ -1,0 +1,12 @@
+dependencies:
+- name: centralledger
+  repository: file://../centralledger
+  version: 9.5.0
+- name: centralsettlement
+  repository: file://../centralsettlement
+  version: 9.2.0
+- name: centraleventprocessor
+  repository: file://../centraleventprocessor
+  version: 9.2.0
+digest: sha256:eec8364b8f1cc43e244aecf751b8d659c6d1072c79c76bc6e8c2ed56ef0aabaa
+generated: "2020-05-11T12:57:41.671574+08:00"

@@ -2,11 +2,9 @@
 Notes on how to get this working with kubernetes 17
 
 ```bash
-
-
-
 git clone git@github.com:vessels-tech/helm.git && cd helm
-git checkout fix/219-kubernetes-17
+# git checkout fix/219-kubernetes-17
+git checkout fix/219-kubernetes-17-helm2-2
 
 ./package.sh
 

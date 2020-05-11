@@ -1,0 +1,33 @@
+dependencies:
+- name: central
+  repository: file://../central
+  version: 9.5.0
+- name: ml-api-adapter
+  repository: file://../ml-api-adapter
+  version: 9.5.0
+- name: emailnotifier
+  repository: file://../emailnotifier
+  version: 9.2.0
+- name: account-lookup-service
+  repository: file://../account-lookup-service
+  version: 9.2.0
+- name: quoting-service
+  repository: file://../quoting-service
+  version: 9.2.0
+- name: simulator
+  repository: file://../simulator
+  version: 9.5.0
+- name: mojaloop-bulk
+  repository: file://../mojaloop-bulk
+  version: 9.2.0
+- name: transaction-requests-service
+  repository: file://../transaction-requests-service
+  version: 9.2.0
+- name: finance-portal
+  repository: file://../finance-portal
+  version: 9.2.0
+- name: finance-portal-settlement-management
+  repository: file://../finance-portal-settlement-management
+  version: 9.2.0
+digest: sha256:fcbf20a04cddcafaf73e63225a44da0509869d1d678c0010bae3fe42dd844a74
+generated: "2020-05-11T13:02:40.0959+08:00"

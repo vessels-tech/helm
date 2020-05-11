@@ -1,0 +1,9 @@
+dependencies:
+- name: bulk-api-adapter-service
+  repository: file://./chart-service
+  version: 9.2.0
+- name: bulk-api-adapter-handler-notification
+  repository: file://./chart-handler-notification
+  version: 9.2.0
+digest: sha256:ca662311818676ae0368c61108de312fbfa62fc8b5c59b05555ae58541699444
+generated: "2020-05-11T13:01:11.849768+08:00"
