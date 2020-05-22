@@ -14,6 +14,6 @@ dependencies:
   condition: als-oracle-pathfinder.enabled
 - name: percona-xtradb-cluster
   version: 1.0.1
-  repository: https://kubernetes-charts.storage.googleapis.com
+  repository: "file://../percona-xtradb-cluster"
   alias: mysql
   condition: mysql.enabled
