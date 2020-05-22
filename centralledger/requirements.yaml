@@ -48,7 +48,9 @@ dependencies:
   alias: mysql
   condition: mysql.enabled
 - name: kafka
-  version: 0.13.11
+  # version: 0.13.11 <--outdated, broken StatefulSet reference
+  version: 0.19.0
+  # version: 0.20.9  <--latest
   repository: http://storage.googleapis.com/kubernetes-charts-incubator
   alias: kafka
   condition: kafka.enabled
