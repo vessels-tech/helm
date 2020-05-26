@@ -8,7 +8,7 @@ image:
   pullPolicy: IfNotPresent
 
 # Desired number of members of xtradb cluster
-replicas: 3
+replicas: 1
 
 ## Specify password for root user
 ##
