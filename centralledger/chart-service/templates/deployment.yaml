@@ -11,6 +11,9 @@ metadata:
     helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
 spec:
   replicas: {{ .Values.replicaCount }}
+{{- if .Values.strategy }}
+      strategy:
+{{ toYaml .Values.strategy | indent 6 }}
   selector:
     matchLabels:
       app.kubernetes.io/name: {{ include "centralledger-service.name" . }}
